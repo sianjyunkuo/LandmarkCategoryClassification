@@ -58,7 +58,7 @@ Figure 6 . The presentation of the freezing layers theory.
 
 ## Result
 <img width="419" alt="截圖 2023-05-08 19 41 55" src="https://user-images.githubusercontent.com/23247251/236980362-1f943e76-99b5-4803-8873-448b3e982f35.png">
-Figure 6 . The curve of the loss function on the training data set and validation data set.
+Figure 7 . The curve of the loss function on the training data set and validation data set.
 
 * F1 score for Landmark: 0.98(validation) 
 * F1 score for Category: 0.91(validation)
