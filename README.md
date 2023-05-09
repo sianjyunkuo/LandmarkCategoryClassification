@@ -13,3 +13,26 @@ The dataset is made up of a selection of pictures of well-known (or lesser-known
 The initial model achieved an accuracy of 17% on validation data accuracy with training accuracy 96%, which was found to be overfitting the data. To improve the validation accuracy and solve the overfitting problem, we implemented pre-processing techniques on the data and applied freezing layers. Our results show that these techniques led to a significant improvement in the model's performance, achieving an accuracy of 96% on a validation set.
 
 This study contributes to the ongoing efforts to improve model accuracy and reduce overfitting in machine learning. The findings can be useful for practitioners and researchers interested in applying pre-processing techniques and freezing layers to improve model performance in image recognition tasks.
+
+## Methods
+In the beginning, we just tried VGG16 and EfficientNetB0 to train and test with some data augmentation by applying a range of image transformations to the original images, including horizontal flipping, rotation, shear, and zoom. we get around 17% validation accuracy.
+
+We applied methods, which included adjusting brightness, saturation, hue, and gamma to make data more suitable for our needs. We also tried the Sobel filter for edge detection and converted the images to grayscale for easier processing. After pre-processing, the validation accuracy greatly increased from 17% to around 80%.We found out that our training accuracy is pretty high around 95% and validation accuracy is around 80%, then we realized that we still have the overfitting problem in this model.
+
+To prevent overfitting, we improved our model training method with freezing layer technique. In the EfficientNet, the model we used, has 237 layers, but not all of these layers need to be trained. Since it is already a powerful network for image identification, further learning of the model is very likely to cause overfitting. We only retained the last 20 layers which can be learned from training. This greatly improved the validation accuracy to around 96%.
+
+### Data Augmentation
+For augmenting the dataset, we used image transformation techniques such as horizontal flipping, rotation, shear and zoom.
+
+## Result
+F1 score for Landmark: 0.98(validation) 
+F1 score for Category: 0.91(validation)
+
+To evaluate our results, we used the loss curve and F1 score. We were able to achieve F1 scores of over 0.9 for both category and landmark classification, indicating that our models were performing well on both tasks. The loss curves of the validation set and training set exhibit similar decreasing trends, and they almost reached convergence at the same time which imply the model is not overfitting. Overall, our project highlights the potential for deep learning to be applied to image classification tasks, and the importance of addressing overfitting in model development.
+
+## Conclusion
+In this study, we have shown that pre-processing techniques and freezing layers can significantly improve model accuracy and reduce overfitting. Specifically, our results demonstrate that the application of photo pre-processing and freezing convolutional layers led to a considerable improvement in model accuracy, from 17% to 96%.
+
+These findings have important implications for machine learning practitioners and researchers who seek to improve model performance and reduce overfitting in image recognition tasks. By utilizing pre-processing techniques and freezing layers, they can enhance the quality of the data and prevent the model from overfitting, leading to more accurate and reliable predictions.
+
+Overall, our study contributes to the ongoing efforts to improve machine learning algorithms' performance and highlights the potential of pre-processing techniques and freezing layers in achieving this goal. Future research can explore additional pre-processing techniques and freezing layer methods to further improve model accuracy and performance.
