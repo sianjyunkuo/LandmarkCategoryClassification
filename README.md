@@ -1,2 +1,4 @@
 # LandmarkCategoryClassification
 DSCI 552 Machine Learning for Data Science group project
+## Abstract
+This study investigates the impact of pre-processing techniques and freezing layers on model accuracy. The initial model achieved a validation accuracy of 17%, but it was found to be overfitting the data. To address this issue, the group implemented pre-processing techniques on the data and applied freezing layers to prevent the model from overfitting. The pre-processing technique involved using image pre-processing, and the freezing layer method involved freezing the layers. As a result of these techniques, the model's validation accuracy was improved from 17% to 96%. The study provides insights into the benefits of using pre-processing and freezing layers for enhanced model accuracy and performance. This research can be useful for practitioners and researchers interested in improving model performance and reducing overfitting in image identification.
