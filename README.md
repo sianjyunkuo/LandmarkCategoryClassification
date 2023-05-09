@@ -26,8 +26,9 @@ For augmenting the dataset, we used image transformation techniques such as hori
 
 ## Result
 <img width="419" alt="截圖 2023-05-08 19 41 55" src="https://user-images.githubusercontent.com/23247251/236980362-1f943e76-99b5-4803-8873-448b3e982f35.png">
-F1 score for Landmark: 0.98(validation) 
-F1 score for Category: 0.91(validation)
+Figure 6 . The curve of the loss function on the training data set and validation data set.
+* F1 score for Landmark: 0.98(validation) 
+* F1 score for Category: 0.91(validation)
 
 To evaluate our results, we used the loss curve and F1 score. We were able to achieve F1 scores of over 0.9 for both category and landmark classification, indicating that our models were performing well on both tasks. The loss curves of the validation set and training set exhibit similar decreasing trends, and they almost reached convergence at the same time which imply the model is not overfitting. Overall, our project highlights the potential for deep learning to be applied to image classification tasks, and the importance of addressing overfitting in model development.
 
