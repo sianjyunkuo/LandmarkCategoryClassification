@@ -25,6 +25,7 @@ To prevent overfitting, we improved our model training method with freezing laye
 For augmenting the dataset, we used image transformation techniques such as horizontal flipping, rotation, shear and zoom.
 
 ## Result
+<img width="419" alt="截圖 2023-05-08 19 41 55" src="https://user-images.githubusercontent.com/23247251/236980362-1f943e76-99b5-4803-8873-448b3e982f35.png">
 F1 score for Landmark: 0.98(validation) 
 F1 score for Category: 0.91(validation)
 
